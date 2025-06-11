@@ -1,2 +1,2 @@
-#TruthFinder Official website
+TruthFinder Official website
 Powered by TrueGiftCorp
