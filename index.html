@@ -1,65 +1,73 @@
 <head>
-<title>TruthF1nd3r</title>
-<link rel="icon" type="image/x-icon" href="truth-ico.ico">
+<title>TruthFinder</title>
+<link rel="icon" type="image/x-icon" href="truthfinder-icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-
+<meta charset="UTF-8">
 </head>
-<html>
-    <body>
-        
-        <div class="page"> 
-        <a href="https://www.instagram.com/truegiftcorp" target="_blank"><img src="logo-title-white.png" width="100px"></img></a>
-                        <br>
-                        <img src="truth-title.png"></img>
 
-                        <div class="moteur">
-                        <p id="Display0">‎</p>
-                        </div>
+<body>
+<div class="title">
+<a href="https://truegiftcorp.github.io/truegiftcorp" target="_blank"><img src="images/logo-title-white.png" width="333px"></img></a>
+</div>
 
-                        <div class="moteur">
-                        <p id="Display1">‎</p>
-                        </div>
+<div class="page"> 
 
-                        <div class="moteur">
-                        <p id="Display2">‎</p>
-                        </div>
+<img src="truth-title.png"></img>
+
+<div class="moteur">
+<p id="Display0">‎</p>
+</div>
+
+<div class="moteur">
+<p id="Display1">‎</p>
+</div>
+
+<div class="moteur">
+<p id="Display2">‎</p>
+</div>
                     
-                        <script>
-                            function pickRandomWord0() {
-                                const words = ["yes", "no", "maybe"];
-                                const randomIndex = Math.floor(Math.random() * words.length);
-                                document.getElementById("Display0").textContent = words[randomIndex];
-                            }
+<script>
+function pickRandomWord0() {
+const words = ["yes", "no", "maybe"];
+const randomIndex = Math.floor(Math.random() * words.length);
+document.getElementById("Display0").textContent = words[randomIndex];
+}
 
-                            function pickRandomWord1() {
-                                const words = ["You already know", "Find"];
-                                const randomIndex = Math.floor(Math.random() * words.length);
-                                document.getElementById("Display1").textContent = words[randomIndex];
-                            }
+function pickRandomWord1() {
+const words = ["You already know", "Look inside"];
+const randomIndex = Math.floor(Math.random() * words.length);
+document.getElementById("Display1").textContent = words[randomIndex];
+}
 
-                            function pickRandomWord2() {
-                                const words = ["Let's go!", "You should do it"];
-                                const randomIndex = Math.floor(Math.random() * words.length);
-                                document.getElementById("Display2").textContent = words[randomIndex];
-                            }
-                        </script>
+function pickRandomWord2() {
+const words = ["Let's go!", "You should do it", "Ask the stars"];
+const randomIndex = Math.floor(Math.random() * words.length);
+document.getElementById("Display2").textContent = words[randomIndex];
+}
+</script>
 
-                        <button onclick="pickRandomWord0(), pickRandomWord1(), pickRandomWord2()">Click to find</button>
+<button onclick="pickRandomWord0(), pickRandomWord1(), pickRandomWord2()">Click to find</button>
 
-        </div> 
+</div> 
 
-    </body>
+</body>
 </html>
 
 <style>
 body{
 background-color: #6087c4;
 }
+.title{
+text-align: center;
+}
+.title img{
+width: 111px;
+}
 .page{
 width: 555px;
 text-align: center;
 color: white;
-margin: 20px auto 100px;
+margin: 0px auto 100px;
 }
 .moteur{
 font-size: 17px;
@@ -76,14 +84,5 @@ height: 30px;
 margin: 50px auto 10px;
 background-color: white;
 color: black;
-}
-    
-    @media screen and (max-width: 700px) {
-.page {
-    max-width: 90%;
-}
-.moteur{
-    width: auto;
-}
 }
 </style>
